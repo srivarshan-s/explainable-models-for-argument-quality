@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# User added
+models/bag-of-words/models/bow_svm_model/model
+models/tf-idf/models/tfidf_svm_model/model
