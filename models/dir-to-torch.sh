@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-echo "Compressing bert-vanilla"
-zip -rq bert-vanilla.pt bert-vanilla/
-echo "Compressing bert-finetune"
-zip -rq bert-finetune.pt bert-finetune/
+for bertmodel in bert-*/
+do
+    bertmodel_name="${bertmodel:0:-1}.pt"
+    echo "Compressing ${bertmodel} to ${bertmodel_name}"
+    zip -rq $bertmodel_name $bertmodel
+done
+
