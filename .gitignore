@@ -136,3 +136,5 @@ data/arg_quality_rank_30k.csv
 .~lock.*
 models/*.pt
 explainability/explanation.html
+models/*/*/*.pt
+models/*/*svm*/*svm*
